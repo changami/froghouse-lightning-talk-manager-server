@@ -1,0 +1,23 @@
+{
+  "name": "frog-lightning-talk-manager",
+  "version": "1.0.0",
+  "description": "It will manage presentation themes at Frog's Lightning Talk.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "api"
+  ],
+  "author": "chan_gami",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
