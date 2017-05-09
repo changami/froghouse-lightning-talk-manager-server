@@ -6,7 +6,8 @@ var express = require('express'),
   bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://db/FrogLightningTalkManager');
+var DBHost = process.env.MONGODB_ADDRESS || "localhost";
+mongoose.connect('mongodb://' + DBHost + '/FrogLightningTalkManager');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
