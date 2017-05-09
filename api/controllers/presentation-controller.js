@@ -15,6 +15,7 @@ exports.create_presentation = function (req, res) {
   new_presentation.save(function (err, presentation) {
     if (err)
       res.send(err);
+    res.status(201);
     res.json(presentation);
   });
 };

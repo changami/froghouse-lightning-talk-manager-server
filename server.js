@@ -24,5 +24,6 @@ app.use(function (req, res, next) {
 });
 
 app.listen(port);
+module.exports = app;
 
 console.log('RESTful API server started on: ' + port);
