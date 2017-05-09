@@ -11,7 +11,7 @@ services:
     environment:
       MONGODB_ADDRESS: db
     ports:
-      - 80:3000
+      - 3000:3000
     volumes:
       - .:/var/app
       - /var/app/node_modules
